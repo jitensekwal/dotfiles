@@ -1,0 +1,5 @@
+[manager]
+show_hidden = true
+ratio = [1,4,3]
+sort_by = "natural"
+scrolloff = 200
