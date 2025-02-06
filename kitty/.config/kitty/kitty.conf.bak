@@ -27,7 +27,7 @@ bold_italic_font auto
 #: <https://sw.kovidgoyal.net/kitty/kittens/choose-fonts/#font-spec-
 #: syntax>.
 
-# font_size 11.0
+ font_size 14.0
 
 #: Font size (in pts).
 
@@ -566,7 +566,7 @@ bold_italic_font auto
 #: clicks (in seconds). Negative numbers will use the system default
 #: instead, if available, or fallback to 0.5.
 
-# focus_follows_mouse no
+ focus_follows_mouse yes
 
 #: Set the active window to the window under the mouse when moving the
 #: mouse around. On macOS, this will also cause the OS Window under
@@ -867,7 +867,7 @@ bold_italic_font auto
 #: suffix of "c" on the width/height values to have them interpreted
 #: as number of cells instead of pixels.
 
-# enabled_layouts *
+ enabled_layouts splits
 
 #: The enabled window layouts. A comma separated list of layout names.
 #: The special value all means all layouts. The first listed layout
@@ -2670,6 +2670,9 @@ bold_italic_font auto
 
 
 # BEGIN_KITTY_THEME
-# Catppuccin-Frappe
+# Catppuccin-Mocha
 include current-theme.conf
 # END_KITTY_THEME
+
+map ctrl+- launch --location=hsplit
+map ctrl+\ launch --location=vsplit
