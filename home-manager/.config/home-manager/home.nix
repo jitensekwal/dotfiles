@@ -19,9 +19,9 @@
     userName = "jitensekwal";
     userEmail = "jitensekwal44@gmail.com";
     extraConfig = {
-      credential.helper = "${
-        pkgs.git.override { withLibsecret = true; }
-      }/bin/git-credential-libsecret";
+      credential.helper = "manager";
+      credential."https://github.com".username = "jitensekwal";
+      credential.credentialStore = "cache";
     };
   };
 
